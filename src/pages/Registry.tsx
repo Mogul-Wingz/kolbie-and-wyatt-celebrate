@@ -83,6 +83,14 @@ const Registry = () => {
             </p>
           </div>
           
+          <div className="text-center mb-16">
+            <a href={amazonRegistryUrl} target="_blank" rel="noopener noreferrer">
+              <Button className="bg-wedding-sage hover:bg-wedding-moss text-white font-josefin text-base px-8 py-6 tracking-wide">
+                View Our Amazon Registry <ExternalLink className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
             {registryItems.map((item) => (
               <Card key={item.id} className="transition-all duration-300 hover:shadow-lg border border-wedding-sage/20 overflow-hidden bg-white rounded-lg">
@@ -112,6 +120,9 @@ const Registry = () => {
           </div>
           
           <div className="mt-16 text-center">
+            <p className="text-sm font-josefin text-wedding-dark/60 mb-4">
+              Can't find what you're looking for? Check out our full registry on Amazon!
+            </p>
             <a href={amazonRegistryUrl} target="_blank" rel="noopener noreferrer">
               <Button className="bg-wedding-sage hover:bg-wedding-moss text-white font-josefin text-base px-8 py-6 tracking-wide">
                 View Full Registry on Amazon <ExternalLink className="ml-2 h-5 w-5" />
