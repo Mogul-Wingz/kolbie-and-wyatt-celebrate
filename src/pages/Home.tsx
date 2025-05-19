@@ -9,16 +9,18 @@ const Home = () => {
   return (
     <Layout>
       {/* Hero Section - Image Only */}
-      <section className="w-full h-[80vh]">
-        <img 
-          src="/lovable-uploads/fbb8acdd-268e-4d52-b168-4906d6ec47b5.png" 
-          alt="Kolbie and Wyatt with their child" 
-          className="w-full h-full object-cover"
-        />
+      <section className="w-full">
+        <div className="w-full">
+          <img 
+            src="/lovable-uploads/fbb8acdd-268e-4d52-b168-4906d6ec47b5.png" 
+            alt="Kolbie and Wyatt with their child" 
+            className="w-full h-[80vh] object-cover"
+          />
+        </div>
       </section>
 
       {/* Introduction Section - Completely Separate from Hero Image */}
-      <section className="wedding-section bg-wedding-sage-hint/20">
+      <section className="wedding-section bg-wedding-sage-hint/20 mt-8">
         <div className="container mx-auto px-4">
           <SectionHeader title="We're Getting Married!" />
           
