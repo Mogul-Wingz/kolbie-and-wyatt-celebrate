@@ -87,7 +87,7 @@ const Travel = () => {
                     </AspectRatio>
                     
                     <a 
-                      href="https://ihg.com/"
+                      href="https://www.ihg.com/holidayinnexpress/hotels/us/en/logan/lgnnm/hoteldetail"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-wedding-sage hover:text-wedding-evergreen hover:underline text-sm inline-flex items-center"
@@ -125,4 +125,3 @@ const Travel = () => {
 };
 
 export default Travel;
-
