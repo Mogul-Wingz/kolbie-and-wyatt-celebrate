@@ -31,12 +31,13 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				wedding: {
-					'blush': '#FFDEE2',
-					'sage': '#D3DEBD',
+					'sage-hint': '#BFCFB8',
+					'mint': '#BFCFB8',
+					'sage': '#8EA58C',
+					'moss': '#738A6E',
+					'evergreen': '#344C3D',
 					'cream': '#FEF9EF',
-					'lavender': '#E5DEFF',
-					'light-gray': '#F1F1F1',
-					'dark': '#595959',
+					'dark': '#344C3D',
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
