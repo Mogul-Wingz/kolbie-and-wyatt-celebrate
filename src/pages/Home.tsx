@@ -9,7 +9,7 @@ import { Calendar, MapPin } from 'lucide-react';
 const Home = () => {
   return (
     <Layout>
-      {/* Hero Section */}
+      {/* Hero Section - Image Only */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
