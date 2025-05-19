@@ -36,7 +36,7 @@ export default {
 					'sage': '#8EA58C',
 					'moss': '#738A6E',
 					'evergreen': '#344C3D',
-					'cream': '#FEF9EF',
+					'cream': '#FFFFFF',
 					'dark': '#344C3D',
 				},
 				primary: {

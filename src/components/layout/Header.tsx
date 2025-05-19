@@ -27,13 +27,13 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-wedding-cream/80 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 py-4 md:py-6">
         {/* Desktop Header */}
         <div className="hidden md:flex flex-col items-center justify-center">
           <h1 className="font-playfair text-3xl mb-1">Kolbie + Wyatt</h1>
           <p className="text-sm font-josefin tracking-wider mb-6">September 13, 2025 • Hyde Park, UT</p>
-          <p className="text-sm font-josefin mb-4 px-3 py-1 bg-wedding-blush/30 rounded-full">118 Days To Go!</p>
+          <p className="text-sm font-josefin mb-4 px-3 py-1 bg-wedding-sage/30 rounded-full">118 Days To Go!</p>
           
           <nav className="mt-4">
             <ul className="flex space-x-8 font-josefin text-sm tracking-wider">
@@ -41,8 +41,8 @@ const Header = () => {
                 <li key={link.path}>
                   <Link 
                     to={link.path}
-                    className={`relative pb-1 hover:text-wedding-blush transition-colors ${
-                      location.pathname === link.path ? 'after:content-[""] after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-wedding-blush' : ''
+                    className={`relative pb-1 hover:text-wedding-sage transition-colors ${
+                      location.pathname === link.path ? 'after:content-[""] after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-wedding-sage' : ''
                     }`}
                   >
                     {link.name}
@@ -72,7 +72,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-wedding-cream shadow-md py-4 animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 animate-fade-in">
             <nav>
               <ul className="flex flex-col space-y-4 font-josefin text-sm tracking-wider px-6">
                 {links.map((link) => (
@@ -80,7 +80,7 @@ const Header = () => {
                     <Link 
                       to={link.path}
                       className={`block py-2 ${
-                        location.pathname === link.path ? 'text-wedding-blush' : ''
+                        location.pathname === link.path ? 'text-wedding-sage' : ''
                       }`}
                       onClick={closeMenu}
                     >

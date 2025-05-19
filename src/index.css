@@ -75,7 +75,7 @@
   }
 
   body {
-    @apply bg-wedding-cream text-wedding-evergreen font-lora;
+    @apply bg-white text-wedding-evergreen font-lora;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -105,5 +105,5 @@ html {
 }
 
 .hero-overlay {
-  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(254,249,239,0.4) 100%);
+  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 100%);
 }
