@@ -4,25 +4,20 @@ import CountdownTimer from '../components/CountdownTimer';
 import SectionHeader from '../components/SectionHeader';
 import Layout from '../components/layout/Layout';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin } from 'lucide-react';
 
 const Home = () => {
   return (
     <Layout>
       {/* Hero Section - Image Only */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/fbb8acdd-268e-4d52-b168-4906d6ec47b5.png" 
-            alt="Kolbie and Wyatt with their child" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        {/* No text overlay on the image */}
+      <section className="w-full h-[80vh]">
+        <img 
+          src="/lovable-uploads/fbb8acdd-268e-4d52-b168-4906d6ec47b5.png" 
+          alt="Kolbie and Wyatt with their child" 
+          className="w-full h-full object-cover"
+        />
       </section>
 
-      {/* Introduction Section */}
+      {/* Introduction Section - Completely Separate from Hero Image */}
       <section className="wedding-section bg-wedding-sage-hint/20">
         <div className="container mx-auto px-4">
           <SectionHeader title="We're Getting Married!" />
