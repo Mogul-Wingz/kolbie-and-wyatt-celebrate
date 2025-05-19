@@ -11,6 +11,7 @@ import Vendors from "./pages/Vendors";
 import QA from "./pages/QA";
 import Travel from "./pages/Travel";
 import ThingsToDo from "./pages/ThingsToDo";
+import Registry from "./pages/Registry";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/qa" element={<QA />} />
           <Route path="/travel" element={<Travel />} />
           <Route path="/things-to-do" element={<ThingsToDo />} />
+          <Route path="/registry" element={<Registry />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

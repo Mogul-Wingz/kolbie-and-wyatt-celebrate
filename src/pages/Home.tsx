@@ -75,13 +75,13 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <h3 className="font-playfair text-xl mb-4 text-wedding-evergreen">Travel & Stay</h3>
-              <p className="mb-4 text-wedding-dark">Find accommodation information and travel tips.</p>
+              <h3 className="font-playfair text-xl mb-4 text-wedding-evergreen">Registry</h3>
+              <p className="mb-4 text-wedding-dark">Browse our wishlist for our new home together.</p>
               <Link 
-                to="/travel" 
+                to="/registry" 
                 className="inline-block text-wedding-evergreen hover:text-wedding-moss hover:underline"
               >
-                Learn More
+                View Registry
               </Link>
             </div>
           </div>
