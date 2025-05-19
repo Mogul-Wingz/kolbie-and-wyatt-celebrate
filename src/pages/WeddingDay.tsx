@@ -30,9 +30,9 @@ const WeddingDay = () => {
               </div>
               <div className="ml-9">
                 <p className="font-josefin text-lg">Mt. Naomi Vineyards</p>
-                <p className="text-wedding-dark/70">1285 E 4500 N, Hyde Park, UT, 84318</p>
+                <p className="text-wedding-dark/70">1000 E. Mt Naomi Farms Lane, Hyde Park, UT 84318</p>
                 <a 
-                  href="https://maps.google.com/?q=1285+E+4500+N,+Hyde+Park,+UT,+84318" 
+                  href="https://maps.google.com/?q=1000+E.+Mt+Naomi+Farms+Lane,+Hyde+Park,+UT+84318" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block mt-2 text-sm text-wedding-blush hover:underline"
