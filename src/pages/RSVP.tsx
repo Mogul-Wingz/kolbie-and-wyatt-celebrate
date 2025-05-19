@@ -29,6 +29,9 @@ const RSVP = () => {
                   Please fill out one section per guest and plus one (if applicable).
                   We kindly ask you to RSVP even if you are unable to attend.
                 </p>
+                <p className="text-wedding-blush font-bold mb-4">
+                  Please RSVP by July 13, 2025
+                </p>
                 <p className="mb-4 text-sm">
                   If you have any issues with the form, please contact:
                 </p>

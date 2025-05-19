@@ -16,19 +16,19 @@ const QA = () => {
     },
     {
       question: "What time should I arrive?",
-      answer: "You should arrive around 3:30-4:00 pm. You will need to be seated before the ceremony starts at 4:30."
+      answer: "You should arrive around 4:00 PM. You will need to be seated before the ceremony starts at 4:30."
     },
     {
       question: "What if I don't RSVP?",
-      answer: "Due to limited capacity and having to let out vendor know ahead of time how much food to bring, we can not guarantee there will be food and a spot for you! So please RSVP, we want you there!"
+      answer: "Due to limited capacity and having to let our vendors know ahead of time how much food to bring, we can not guarantee there will be food and a spot for you! So please RSVP, we want you there!"
     },
     {
       question: "Where should I park? Is it free? Can I leave my car overnight?",
-      answer: "There are designated guests parking spots at the venue, there are signs posted on where to park. The invitation also has a map for parking as well as the travel section on here. Parking is free. You can not leave your car overnight, so if you plan to drink make sure you have a designated driver."
+      answer: "There are designated guest parking spots at the venue. There are signs posted on where to park. The Wedding Day section on the website includes a parking map. Parking is free. You can not leave your car overnight, so if you plan to drink make sure you have a designated driver."
     },
     {
       question: "What if I can't attend the wedding?",
-      answer: "We ask that you let us know if you can't make it to the wedding before the RSVP deadline. Please fill out the RSVP in the how to RSVP section. We will miss you, but understand!"
+      answer: "We ask that you let us know if you can't make it to the wedding before the RSVP deadline. Please fill out the RSVP form on the RSVP page. We will miss you, but understand!"
     },
     {
       question: "What date should I RSVP by?",

@@ -65,13 +65,12 @@ const Vendors = () => {
                   <div className="p-6 text-center">
                     <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
                       <img 
-                        src="/lovable-uploads/42de241b-e849-4851-8800-3bce809b17ac.png" 
+                        src="/lovable-uploads/d9396a23-f592-467a-836a-73ecb0e3abf3.png" 
                         alt="Photobooth" 
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <h4 className="font-playfair text-xl mb-2">Photobooth</h4>
-                    <p className="text-sm mb-3">Entertainment</p>
                     <p>Capture memories with our photobooth. Take home printed keepsakes and access digital copies.</p>
                   </div>
                 </div>
