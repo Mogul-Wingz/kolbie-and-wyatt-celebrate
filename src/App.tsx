@@ -9,6 +9,7 @@ import WeddingDay from "./pages/WeddingDay";
 import RSVP from "./pages/RSVP";
 import Vendors from "./pages/Vendors";
 import QA from "./pages/QA";
+import Travel from "./pages/Travel";
 import ThingsToDo from "./pages/ThingsToDo";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/rsvp" element={<RSVP />} />
           <Route path="/vendors" element={<Vendors />} />
           <Route path="/qa" element={<QA />} />
+          <Route path="/travel" element={<Travel />} />
           <Route path="/things-to-do" element={<ThingsToDo />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
