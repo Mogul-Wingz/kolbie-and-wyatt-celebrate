@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Package, Gift } from 'lucide-react';
 
 interface RegistryItem {
   id: string;
@@ -83,51 +83,29 @@ const Registry = () => {
             </p>
           </div>
           
-          <div className="text-center mb-16">
-            <a href={amazonRegistryUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="bg-wedding-sage hover:bg-wedding-moss text-white font-josefin text-base px-8 py-6 tracking-wide">
-                View Our Amazon Registry <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
+          <div className="flex flex-col items-center justify-center mb-16">
+            <div className="p-6 md:p-8 max-w-lg w-full bg-white rounded-xl shadow-sm border border-wedding-sage/30">
+              <div className="flex justify-center mb-6">
+                <Gift className="h-16 w-16 text-wedding-sage" />
+              </div>
+              <h3 className="font-playfair text-2xl mb-3 text-center text-wedding-evergreen">Our Amazon Registry</h3>
+              <p className="text-center text-wedding-dark/70 font-josefin mb-6">
+                We've created a registry on Amazon with items we would love for our new home together.
+              </p>
+              <div className="flex justify-center">
+                <a href={amazonRegistryUrl} target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className="w-full bg-wedding-sage hover:bg-wedding-moss text-white font-josefin text-base py-6 tracking-wide">
+                    Visit Our Wedding Registry <ExternalLink className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
+              </div>
+            </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
-            {registryItems.map((item) => (
-              <Card key={item.id} className="transition-all duration-300 hover:shadow-lg border border-wedding-sage/20 overflow-hidden bg-white rounded-lg">
-                <div className="aspect-square overflow-hidden bg-gray-50">
-                  <img 
-                    src={item.image} 
-                    alt={item.name}
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-                <CardContent className="p-5">
-                  <h3 className="font-playfair text-xl mb-1 text-wedding-evergreen truncate">{item.name}</h3>
-                  {item.description && (
-                    <p className="text-sm text-wedding-dark/80 font-josefin mb-2">{item.description}</p>
-                  )}
-                  <p className="font-bold text-wedding-moss">{item.price}</p>
-                  <div className="mt-4">
-                    <a href={item.link} target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" className="w-full border-wedding-sage hover:bg-wedding-sage hover:text-white transition-all">
-                        View & Buy <ExternalLink className="ml-1 h-4 w-4" />
-                      </Button>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="mt-16 text-center">
-            <p className="text-sm font-josefin text-wedding-dark/60 mb-4">
-              Can't find what you're looking for? Check out our full registry on Amazon!
+          <div className="mt-16 text-center max-w-xl mx-auto">
+            <p className="text-sm font-josefin text-wedding-dark/80 italic">
+              Thank you for supporting us as we begin this new chapter of our lives!
             </p>
-            <a href={amazonRegistryUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="bg-wedding-sage hover:bg-wedding-moss text-white font-josefin text-base px-8 py-6 tracking-wide">
-                View Full Registry on Amazon <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
           </div>
         </div>
       </div>
