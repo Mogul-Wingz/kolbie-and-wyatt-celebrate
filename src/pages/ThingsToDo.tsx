@@ -119,7 +119,7 @@ const ThingsToDo = () => {
                   </div>
                   
                   <p className="mb-4">
-                    If you arrive early on the wedding day, check out the vibrant Ogden Farmers Market. Browse local foods, crafts, and enjoy live music in historic downtown Ogden.
+                    If you are looking for something to do, check out the vibrant Ogden Farmers Market. Browse local foods, crafts, and enjoy live music in historic downtown Ogden.
                   </p>
                   
                   <a 

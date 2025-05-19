@@ -58,6 +58,7 @@ const Vendors = () => {
                     <h4 className="font-playfair text-xl mb-2">Social Axe Throwing Truck</h4>
                     <p className="text-sm mb-3">Where Kolbie and Wyatt first met!</p>
                     <p>Test your aim and have fun with axe throwing. Friendly competition for all wedding guests!</p>
+                    <p className="text-sm mt-3 text-red-600 font-medium">Important: Close-toed shoes are required for axe throwing.</p>
                   </div>
                 </div>
                 
