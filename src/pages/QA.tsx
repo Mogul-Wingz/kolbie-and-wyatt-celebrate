@@ -3,6 +3,8 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 import SectionHeader from '../components/SectionHeader';
 import { MapPin } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const QA = () => {
   return (
@@ -20,7 +22,7 @@ const QA = () => {
               <h3 className="font-playfair text-2xl mb-6 text-center">Venue Information</h3>
               
               <div className="flex items-start mb-4">
-                <MapPin className="mr-3 text-wedding-blush mt-1" size={20} />
+                <MapPin className="mr-3 text-wedding-sage mt-1" size={20} />
                 <div>
                   <h4 className="font-josefin font-medium">Mt. Naomi Vineyards</h4>
                   <p className="text-sm">1000 East Mt. Naomi Farms Lane, Hyde Park, Utah 84318</p>
@@ -47,31 +49,53 @@ const QA = () => {
               <h3 className="font-playfair text-2xl mb-6 text-center">Nearby Hotels</h3>
               
               <div className="space-y-8">
-                <div>
-                  <h4 className="font-playfair text-xl mb-2">Hampton Inn and Suites Logan</h4>
-                  <p className="text-sm mb-2">207 North Main Street, Logan, UT 84321</p>
-                  <a 
-                    href="https://www.hilton.com/en/hotels/lgudahx-hampton-suites-logan/?SEO_id=GMB-AMER-HX-LGUDAHX"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-wedding-blush hover:underline text-sm"
-                  >
-                    Visit Website
-                  </a>
-                </div>
+                <Card className="overflow-hidden border-wedding-sage border-opacity-20">
+                  <div className="p-6">
+                    <h4 className="font-playfair text-xl mb-2">Hampton Inn and Suites Logan</h4>
+                    <p className="text-sm mb-3">207 North Main Street, Logan, UT 84321</p>
+                    
+                    <AspectRatio ratio={16/9} className="bg-muted mb-4 rounded-md overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/73767a4e-f0f7-4e23-9b6a-b6ada2ea826b.png" 
+                        alt="Hampton Inn and Suites Logan" 
+                        className="object-cover w-full h-full"
+                      />
+                    </AspectRatio>
+                    
+                    <a 
+                      href="https://www.hilton.com/en/hotels/lgudahx-hampton-suites-logan/?SEO_id=GMB-AMER-HX-LGUDAHX"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-wedding-sage hover:text-wedding-evergreen hover:underline text-sm inline-flex items-center"
+                    >
+                      Visit Website
+                    </a>
+                  </div>
+                </Card>
                 
-                <div>
-                  <h4 className="font-playfair text-xl mb-2">Holiday Inn Express & Suites Logan</h4>
-                  <p className="text-sm mb-2">2235 N Main St, Logan, UT 84341</p>
-                  <a 
-                    href="https://ihg.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-wedding-blush hover:underline text-sm"
-                  >
-                    Visit Website
-                  </a>
-                </div>
+                <Card className="overflow-hidden border-wedding-sage border-opacity-20">
+                  <div className="p-6">
+                    <h4 className="font-playfair text-xl mb-2">Holiday Inn Express & Suites Logan</h4>
+                    <p className="text-sm mb-3">2235 N Main St, Logan, UT 84341</p>
+                    
+                    <AspectRatio ratio={16/9} className="bg-muted mb-4 rounded-md overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/c687c38c-a41a-4f8c-a933-3712c8643f3b.png" 
+                        alt="Holiday Inn Express & Suites Logan" 
+                        className="object-cover w-full h-full"
+                      />
+                    </AspectRatio>
+                    
+                    <a 
+                      href="https://ihg.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-wedding-sage hover:text-wedding-evergreen hover:underline text-sm inline-flex items-center"
+                    >
+                      Visit Website
+                    </a>
+                  </div>
+                </Card>
               </div>
             </div>
             
