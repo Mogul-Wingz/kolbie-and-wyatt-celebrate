@@ -56,7 +56,7 @@ const Travel = () => {
                     
                     <AspectRatio ratio={16/9} className="bg-muted mb-4 rounded-md overflow-hidden">
                       <img 
-                        src="/lovable-uploads/73767a4e-f0f7-4e23-9b6a-b6ada2ea826b.png" 
+                        src="/lovable-uploads/022877da-7846-4968-8b5c-a10dfbe89e99.png" 
                         alt="Hampton Inn and Suites Logan" 
                         className="object-cover w-full h-full"
                       />
@@ -80,7 +80,7 @@ const Travel = () => {
                     
                     <AspectRatio ratio={16/9} className="bg-muted mb-4 rounded-md overflow-hidden">
                       <img 
-                        src="/lovable-uploads/c687c38c-a41a-4f8c-a933-3712c8643f3b.png" 
+                        src="/lovable-uploads/d8e738c4-090e-48be-8451-d052896dda5f.png" 
                         alt="Holiday Inn Express & Suites Logan" 
                         className="object-cover w-full h-full"
                       />
@@ -125,3 +125,4 @@ const Travel = () => {
 };
 
 export default Travel;
+
