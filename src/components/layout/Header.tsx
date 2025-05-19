@@ -22,6 +22,7 @@ const Header = () => {
     { name: 'Wedding Day', path: '/wedding-day' },
     { name: 'RSVP', path: '/rsvp' },
     { name: 'Vendors', path: '/vendors' },
+    { name: 'Travel', path: '/travel' },
     { name: 'Q+A', path: '/qa' },
     { name: 'Things To Do', path: '/things-to-do' }
   ];

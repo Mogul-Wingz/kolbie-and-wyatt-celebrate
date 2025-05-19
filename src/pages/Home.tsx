@@ -78,7 +78,7 @@ const Home = () => {
               <h3 className="font-playfair text-xl mb-4 text-wedding-evergreen">Travel & Stay</h3>
               <p className="mb-4 text-wedding-dark">Find accommodation information and travel tips.</p>
               <Link 
-                to="/qa" 
+                to="/travel" 
                 className="inline-block text-wedding-evergreen hover:text-wedding-moss hover:underline"
               >
                 Learn More
