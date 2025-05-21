@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/',  // This ensures assets are loaded correctly with custom domain
+  base: '/',  // Updated for custom domain kolbie-wyatt.com
   server: {
     host: "::",
     port: 8080,
