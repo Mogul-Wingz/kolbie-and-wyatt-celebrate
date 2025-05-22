@@ -28,6 +28,14 @@ jobs:
         run: npm run build
       - name: Add .nojekyll file
         run: touch dist/.nojekyll
+      - name: Create _headers file if it doesn't exist
+        run: |
+          if [ ! -f dist/_headers ]; then
+            echo "/*.js" > dist/_headers
+            echo "  Content-Type: application/javascript" >> dist/_headers
+            echo "/*.mjs" >> dist/_headers
+            echo "  Content-Type: application/javascript" >> dist/_headers
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

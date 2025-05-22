@@ -24,6 +24,12 @@ const copyFilesToDist = () => {
       // Create .nojekyll file in dist
       fs.writeFileSync('dist/.nojekyll', '');
       console.log('.nojekyll file created in dist/');
+      
+      // Copy _headers file from public to dist if it exists
+      if (fs.existsSync('public/_headers')) {
+        fs.copyFileSync('public/_headers', 'dist/_headers');
+        console.log('_headers file copied to dist/');
+      }
     }
   };
 };
@@ -41,9 +47,9 @@ export default defineConfig(({ mode }) => ({
       output: {
         // Ensure proper asset handling
         manualChunks: undefined,
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
       }
     }
   },
