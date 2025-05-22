@@ -3,11 +3,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [daysToGo, setDaysToGo] = useState(0);
   const location = useLocation();
+
+  useEffect(() => {
+    const calculateDaysToGo = () => {
+      const today = new Date();
+      const weddingDate = new Date('September 13, 2025 16:30:00');
+      const timeDiff = weddingDate.getTime() - today.getTime();
+      const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+      setDaysToGo(daysDiff);
+    };
+
+    calculateDaysToGo();
+    // Update daily
+    const interval = setInterval(calculateDaysToGo, 86400000);
+    
+    return () => clearInterval(interval);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,7 +52,7 @@ const Header = () => {
         <div className="hidden md:flex flex-col items-center justify-center">
           <h1 className="font-playfair text-3xl mb-1">Kolbie + Wyatt</h1>
           <p className="text-sm font-josefin tracking-wider mb-6">September 13, 2025 • Hyde Park, UT</p>
-          <p className="text-sm font-josefin mb-4 px-3 py-1 bg-wedding-sage/30 rounded-full">118 Days To Go!</p>
+          <p className="text-sm font-josefin mb-4 px-3 py-1 bg-wedding-sage/30 rounded-full">{daysToGo} Days To Go!</p>
           
           <nav className="mt-4">
             <ul className="flex space-x-8 font-josefin text-sm tracking-wider">
@@ -60,7 +77,7 @@ const Header = () => {
           <div className="flex flex-col">
             <h1 className="font-playfair text-xl">Kolbie + Wyatt</h1>
             <p className="text-xs font-josefin tracking-wider">September 13, 2025</p>
-            <p className="text-xs font-josefin">118 Days To Go!</p>
+            <p className="text-xs font-josefin">{daysToGo} Days To Go!</p>
           </div>
           
           <button 

@@ -30,16 +30,17 @@ const copyFilesToDist = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: './',  // Using relative paths for more robust asset loading
+  base: './', // Using relative paths for asset loading
   server: {
     host: "::",
     port: 8080,
   },
   build: {
+    outDir: 'dist',
     rollupOptions: {
       output: {
-        // Ensure proper MIME types for JS modules
-        format: 'es',
+        // Ensure proper asset handling
+        manualChunks: undefined,
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]'
