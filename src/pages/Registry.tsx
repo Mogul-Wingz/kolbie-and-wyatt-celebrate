@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Package, Gift } from 'lucide-react';
+import { ExternalLink, Package, Gift, DollarSign } from 'lucide-react';
 
 interface RegistryItem {
   id: string;
@@ -83,8 +83,9 @@ const Registry = () => {
             </p>
           </div>
           
-          <div className="flex flex-col items-center justify-center mb-16">
-            <div className="p-6 md:p-8 max-w-lg w-full bg-white rounded-xl shadow-sm border border-wedding-sage/30">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
+            {/* Amazon Registry Card */}
+            <div className="p-6 md:p-8 bg-white rounded-xl shadow-sm border border-wedding-sage/30">
               <div className="flex justify-center mb-6">
                 <Gift className="h-16 w-16 text-wedding-sage" />
               </div>
@@ -99,6 +100,29 @@ const Registry = () => {
                   </Button>
                 </a>
               </div>
+            </div>
+
+            {/* Venmo Card */}
+            <div className="p-6 md:p-8 bg-white rounded-xl shadow-sm border border-wedding-sage/30">
+              <div className="flex justify-center mb-6">
+                <DollarSign className="h-16 w-16 text-wedding-sage" />
+              </div>
+              <h3 className="font-playfair text-2xl mb-3 text-center text-wedding-evergreen">Venmo Gift Option</h3>
+              <p className="text-center text-wedding-dark/70 font-josefin mb-6">
+                If you'd prefer to contribute to our honeymoon fund or future adventures, you can send a gift via Venmo.
+              </p>
+              <div className="flex justify-center mb-4">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-wedding-sage/20">
+                  <img 
+                    src="/lovable-uploads/venmo-qr-code.jpeg" 
+                    alt="Venmo QR Code for Kolbie Tate"
+                    className="w-48 h-48 md:w-56 md:h-56 object-contain"
+                  />
+                </div>
+              </div>
+              <p className="text-center text-wedding-dark/60 font-josefin text-sm">
+                Scan the QR code or search for <span className="font-semibold">@kolbietate</span>
+              </p>
             </div>
           </div>
           
